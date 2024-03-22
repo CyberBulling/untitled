@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container *{
+    padding: 5px;
+}
+header{
+    position: sticky;
+    background-color: white;
+    top: 0;
+    border-bottom: 1px solid black;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+}
+nav p{
+    padding-left: 10px;
+}
+header h1{
+    text-align: center;
+}
+footer{
+    border-top: 1px solid black;
+    text-align: center;
+}
+footer nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+nav .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.courses{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
