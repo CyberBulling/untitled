@@ -1,48 +1,69 @@
+@import url('vars.css');
+
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .container *{
-    padding: 5px;
+  padding: 5px;
 }
 header{
-    position: sticky;
-    background-color: white;
-    top: 0;
-    border-bottom: 1px solid black;
+  position: sticky;
+  background-color: var(--bg-main-color);
+  top: 0;
+  border-bottom: var(--border-main-color);
 }
 header nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 header h1{
-    text-align: center;
+  text-align: center;
+  font-family: var(--font-fam-sec);
+  background-color: var(--h-bg-main-color);
+  color: var(--h-bg-sec-color);
+}
+.container h2{
+  background-color: var(--h-bg-main-color);
+  color: var(--h-bg-sec-color);
+}
+.container p{
+  font-size: clamp(1rem, 1.2rem, 1.5rem);
+}
+header nav p{
+  font-family: var(--font-fam-sec);
+}
+.container *{
+  font-family: var(--font-fam-main);
+  background-color: var(--font-main-color);
+  color: var(--font-sec-color);
 }
 footer{
-    border-top: 1px solid black;
-    text-align: center;
+  border-top: var(--border-main-color);
+  text-align: center;
+  background-color: var(--h-bg-main-color);
+  color: var(--h-bg-sec-color);
 }
 footer nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  justify-content: space-around;
 }
 nav .column{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .courses{
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  padding: 5px;
+  margin: 5px;
+  border: var(--border-sec-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .current, .passed{
   width: 50%;
@@ -52,7 +73,7 @@ nav .column{
 .course{
   padding: 5px;
   margin: 2px;
-  border: 1px solid black;
+  border: var(--border-sec-color);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -72,7 +93,7 @@ nav .column{
   width: 23%;
   margin: 10px;
   padding: 5px;
-  border: 1px solid black;
+  border: var(--border-sec-color);
 }
 .post:nth-child(3n +2){
   flex-grow: 1;
@@ -90,7 +111,7 @@ nav .column{
   flex-basis: 30%;
 }
 .record{
-  border: 1px solid black;
+  border: var(--border-sec-color);
   margin: 2px;
   padding: 4px;
 }
@@ -98,4 +119,24 @@ nav .column{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.min-max {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.min-max .min {
+  width: calmp(200px,50vw,50vw);
+  height: 200px;
+  border: var(--border-main-color);
+}
+
+.min-max .max {
+  width: calmp(70vw,70vw,700px);
+  height: 200px;
+  border: var(--border-main-color);
 }
