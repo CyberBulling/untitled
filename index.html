@@ -1,180 +1,239 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Flexbox</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Блочная верстка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+        integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5"
+        crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <h1>Шапка страницы</h1>
-    <nav>
-        <p class="nav-item">Главная</p>
-        <p class="nav-item">Курсы</p>
-        <p class="nav-item">Посты</p>
-        <p class="nav-item">Записи</p>
-        <p class="nav-item">Контакты</p>
-    </nav>
-</header>
-<div class="container">
-    <h2>Курсы</h2>
-    <div class="courses">
-        <div class="current">
-            <h2>Текущие курсы</h2>
-            <div class="course">
-                <p>Lorem ipsum 1</p>
-                <p>60 баллов из 100</p>
-            </div>
-            <div class="course">
-                <p>Lorem ipsum 2</p>
-                <p>40 баллов из 100</p>
-            </div>
-            <div class="course">
-                <p>Lorem ipsum 3</p>
-                <p>56 баллов из 100</p>
-            </div>
-        </div>
-        <div class="passed">
-            <h2>Прошедшие курсы</h2>
-            <div class="course">
-                <p>Lorem ipsum 1</p>
-                <p>90 баллов из 100</p>
-            </div>
-            <div class="course">
-                <p>Lorem ipsum 2</p>
-                <p>81 баллов из 100</p>
-            </div>
-            <div class="course">
-                <p>Lorem ipsum 3</p>
-                <p>83 баллов из 100</p>
-            </div>
-            <div class="course">
-                <p>Lorem ipsum 4</p>
-                <p>78 баллов из 100</p>
-            </div>
-            <div class="course">
-                <p>Lorem ipsum 5</p>
-                <p>76 баллов из 100</p>
-            </div>
-        </div>
+
+	<div class="nav">
+		<div class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-heading">
+                Оглавление
+            </li>
+            <li class="pure-menu-item">
+                <a href="#tb"
+                   class="pure-menu-link">
+                    Таблица
+                </a>
+            </li>
+            <li class="pure-menu-item">
+                <a href="#frm"
+                   class="pure-menu-link">
+                    Форма
+                </a>
+            </li>
+        </ul>
     </div>
-    <h2>Посты</h2>
-    <div class="posts">
-        <div class="post">
-            <p class="title">Пост 1</p>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+
+	<div class="warning">
+		<span class="warning-text">Pure.css не является достаточно функциональным фреймворком для красивого оформления всех элементов</span>
+	</div>
+
+	<div id="tb">
+		<table class="pure-table">
+			<thead>
+				<tr>
+					<th>Рост</th>
+					<th>147</th>
+					<th>152</th>
+					<th>155</th>
+					<th>160</th>
+					<th>163</th>
+					<th>165</th>
+					<th>168</th>
+					<th>170</th>
+					<th>173</th>
+					<th>175</th>
+					<th>178</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Вес</td>
+				<td colspan="11"> </td>
+			</tr>
+			<tr>
+				<td>40-45</td>
+				<td colspan="6">1</td>
+				<td colspan="5"> </td>
+			</tr>
+			<tr>
+				<td>45-50</td>
+				<td colspan="5">1</td>
+				<td colspan="3">2</td>
+				<td colspan="3"> </td>
+			</tr>
+			<tr>
+				<td>50-55</td>
+				<td colspan="3">1</td>
+				<td colspan="5">2</td>
+				<td colspan="3">3</td>
+			</tr>
+			<tr>
+				<td>55-60</td>
+				<td colspan="2"> </td>
+				<td colspan="4">2</td>
+				<td colspan="4">3</td>
+				<td colspan="1">4</td>
+			</tr>
+			<tr>
+				<td>60-65</td>
+				<td colspan="3"> </td>
+				<td colspan="2">2</td>
+				<td colspan="4">3</td>
+				<td colspan="2">4</td>
+			</tr>
+			<tr>
+				<td>65-70</td>
+				<td colspan="6"> </td>
+				<td colspan="2">3</td>
+				<td colspan="3">4</td>
+			</tr>
+			<tr>
+				<td>70-75</td>
+				<td colspan="7"> </td>
+				<td colspan="4">4</td>
+			</tr>
+			<tr>
+				<td>75-80</td>
+				<td colspan="9"> </td>
+				<td colspan="2">5</td>
+			</tr>
+			<tr>
+				<td>80-85</td>
+				<td colspan="9"> </td>
+				<td colspan="2">5</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div id="frm">
+		<form class="pure-form pure-form-aligned">
+			<fieldset>
+        <div class="pure-control-group">
+            <label for="aligned-name">ФИО</label>
+            <input type="text" id="aligned-name" placeholder="Фамилия Имя Отчество" />
+            <span class="pure-form-message-inline">Обязательно</span>
         </div>
-        <div class="post">
-            <p class="title">Пост 2</p>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat interdum varius sit amet mattis. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Ac turpis egestas integer eget aliquet nibh.</p>
+        <div class="pure-control-group">
+            <label for="aligned-password">Пароль</label>
+            <input type="password" id="aligned-password" placeholder="Пароль" />
+						<span class="pure-form-message-inline">Обязательно</span>
         </div>
-        <div class="post">
-            <p class="title">Пост 3</p>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="pure-control-group">
+            <label for="aligned-email">Адрес почты</label>
+            <input type="email" id="aligned-email" placeholder="Адрес почты" />
         </div>
-        <div class="post">
-            <p class="title">Пост 4</p>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat interdum varius sit amet mattis. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Ac turpis egestas integer eget aliquet nibh.</p>
-        </div>
-        <div class="post">
-            <p class="title">Пост 5</p>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="post">
-            <p class="title">Пост 6</p>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="post">
-            <p class="title">Пост 7</p>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="post">
-            <p class="title">Пост 8</p>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="post">
-            <p class="title">Пост 9</p>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat interdum varius sit amet mattis. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Ac turpis egestas integer eget aliquet nibh.</p>
-        </div>
-    </div>
-    <h2>Записи</h2>
-    <div class="records-list">
-        <div class="records">
-            <div class="record">
-                <div class="info">
-                    <p class="title">Запись 1</p>
-                    <p>2024/01/01</p>
-                </div>
-                <div class="data">
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat interdum varius sit amet mattis. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Ac turpis egestas integer eget aliquet nibh.</p>
-                </div></div>
-            <div class="record">
-                <div class="info">
-                    <p class="title">Запись 2</p>
-                    <p>2024/01/01</p>
-                </div>
-                <div class="data">
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat interdum varius sit amet mattis. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Ac turpis egestas integer eget aliquet nibh.</p>
-                </div>
-            </div>
-            <div class="record">
-                <div class="info">
-                    <p class="title">Запись 3</p>
-                    <p>2024/01/01</p>
-                </div>
-                <div class="data">
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat interdum varius sit amet mattis. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Ac turpis egestas integer eget aliquet nibh.</p>
-                </div>
-            </div>
-            <div class="record">
-                <div class="info">
-                    <p class="title">Запись 4</p>
-                    <p>2024/01/01</p>
-                </div>
-                <div class="data">
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat interdum varius sit amet mattis. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Ac turpis egestas integer eget aliquet nibh.</p>
-                </div>
-            </div>
-        </div>
-        <div class="pin-record">
-            <h3>Закрепленная запись</h3>
-            <div class="record pinned">
-                <div class="info">
-                    <p class="title">Запись 3</p>
-                    <p>2024/01/01</p>
-                </div>
-                <div class="data">
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat interdum varius sit amet mattis. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Ac turpis egestas integer eget aliquet nibh.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<footer>
-    <nav>
-        <div class="column">
-            <a class="link">Lorem ipsum</a>
-            <a class="link">Lorem ipsum</a>
-            <a class="link">Lorem ipsum</a>
-        </div>
-        <div class="column">
-            <a class="link">Lorem ipsum</a>
-            <a class="link">Lorem ipsum</a>
-            <a class="link">Lorem ipsum</a>
-            <a class="link">Lorem ipsum</a>
-        </div>
-        <div class="column">
-            <a class="link">Lorem ipsum</a>
-            <a class="link">Lorem ipsum</a>
-        </div>
-        <div class="column">
-            <a class="link">Lorem ipsum</a>
-            <a class="link">Lorem ipsum</a>
-            <a class="link">Lorem ipsum</a>
-            <a class="link">Lorem ipsum</a>
-        </div>
-    </nav>
-    <p>© Lorem ipsum.</p>
-</footer>
+    	</fieldset>
+
+			<fieldset>
+				<legend>Пол</legend>
+				<label for="v1" class="pure-checkbox">
+					<input type="radio" id="v1" name="male" value="Мужской">
+					Мужской
+				</label>
+				<label for="v1" class="pure-radio">
+					<input type="radio" id="v1" name="male" value="Женский">
+					Женский
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Страна</legend>
+				<label for="c1" class="pure-radio"><input type="radio" id="c1" name="country">Россия</label>
+				<label for="c2" class="pure-radio"><input type="radio" id="c2" name="country">Германия</label>
+				<label for="c3" class="pure-radio"><input type="radio" id="c3" name="country">Америка</label>
+				<label for="c4" class="pure-radio"><input type="radio" id="c4" name="country">Англия</label>
+				<label for="c5" class="pure-radio"><input type="radio" id="c5" name="country">Польша</label>
+				<label for="c6" class="pure-radio"><input type="radio" id="c6" name="country">Другая</label>
+			</fieldset>
+
+			<fieldset>
+				<label for="city">Город</label>
+				<select id="city">
+					<option>Выберите город</option>
+					<optgroup label="Россия">
+						<option>Иркутск</option>
+						<option>Москва</option>
+					</optgroup>
+					<optgroup label="Не Россия">
+						<option>Вашингтон</option>
+						<option>Лондон</option>
+						<option>Варшава</option>
+						<option>Другой</option>
+					</optgroup>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<label for="time">Часовой пояс</label>
+				<select name="time" id="time">
+					<option>Выберите часовой пояс</option>
+					<option>Гринвич GMT+0:00</option>
+					<option>Париж GMT+1:00</option>
+					<option>Иерусалим GMT+2:00</option>
+					<option>Москва GMT+3:00</option>
+					<option>Самара GMT+4:00</option>
+					<option>Ташкент GMT+5:00</option>
+					<option>Алматы GMT+6:00</option>
+					<option>Барнаул GMT+7:00</option>
+					<option>Иркутск GMT+8:00</option>
+					<option>Чита GMT+9:00</option>
+					<option>Владивосток GMT+10:00</option>
+					<option>Магадан GMT+11:00</option>
+					<option>Камчатка GMT+12:00</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<label for="datet">Дата:</label>
+				<input type="datetime-local" id="datet">
+			</fieldset>
+
+			<fieldset>
+				<label for="pnumb">Номер телефона:</label>
+				<input type="tel" id="pnumb" name="pnumb" content="Номер телефона" value="+7" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+			</fieldset>
+
+			<fieldset>
+				<label for="pass">Пароль:</label>
+				<input type="password" id="pass" name="pass" required>
+			</fieldset>
+
+			<fieldset>
+				<label for="stacked-remember" class="pure-checkbox">
+	        <input type="checkbox" id="stacked-remember"/>
+					Запомнить меня
+				</label>
+			</fieldset>
+
+			<fieldset class="pure-group">
+				<legend>Ваши комментарии</legend>
+				<textarea class="pure-input-1-2" placeholder="Любой текст"></textarea>
+	 		</fieldset>
+
+			<label>
+			  <input type="file" multiple/>
+			  <span>Загрузить файлы</span>
+			</label>
+
+			<fieldset>
+				<button type="submit" class="button-success pure-button pure-button-primary">Отправить</button><br>
+				<button type="reset" class="button-error pure-button">Сбросить</button>
+			</fieldset>
+
+		</form>
+	</div>
+
 </body>
+
 </html>

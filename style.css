@@ -1,48 +1,66 @@
-*{
-    margin: 0;
-    padding: 0;
+.pure-table {
+    border-collapse:collapse;
+    border-spacing:0;
+    border:1px solid black !important;
 }
-.container *{
-    padding: 5px;
+.pure-table td,.pure-table th {
+     border: 1px solid #cbcbcb;
+     margin:0;
 }
-header{
-    position: sticky;
+.pure-table thead tr{
+    background-color: #e0e0e0 !important;
+    color: #000;
+}
+.pure-table tr{
     background-color: white;
-    top: 0;
-    border-bottom: 1px solid black;
 }
-header nav{
-    display: flex;
-    flex-direction: row;
+.pure-table tr:nth-child(2n){
+    background-color: cadetblue;
 }
-nav p{
-    padding-left: 10px;
+.pure-table tr:hover{
+  background-color: violet;
 }
-header h1{
-    text-align: center;
+.nav{
+  background-color: white;
+  position: sticky;
+  height: 40px;
+  width: 100%;
+  top: 0px;
+  border-bottom: 1px solid black;
 }
-footer{
-    border-top: 1px solid black;
-    text-align: center;
+.pure-menu-heading{
+    color: #308d46;
 }
-footer nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    margin-right: 10px;
-    margin-left: 10px;
+#tb{
+  background-color: LemonChiffon;
+  padding: 10px;
 }
-nav .column{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#frm{
+  background-color: LemonChiffon;
+  padding: 10px;
 }
-.courses{
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#frm *{
+  margin: 10px;
+}
+.pure-input-1-2{
+  overflow: auto;
+}
+.button-error{
+  background-color: red;
+  color: white;
+}
+label input[type='file']{
+  display: none;
+}
+label span{
+  background-color: wheat;
+  padding: 5px;
+}
+label span:hover{
+  background-color: palegreen;
+}
+.warning{
+  background: #ffc107;
+  text-align: center;
+  padding: 10px;
 }

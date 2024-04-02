@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container *{
+    padding: 5px;
+}
+header{
+    position: sticky;
+    background-color: white;
+    top: 0;
+    border-bottom: 1px solid black;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+header h1{
+    text-align: center;
+}
+footer{
+    border-top: 1px solid black;
+    text-align: center;
+}
+footer nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: space-around;
+}
+nav .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.courses{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.current, .passed{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.course{
+  padding: 5px;
+  margin: 2px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.course:nth-of-type(even){
+  flex-direction: row-reverse;
+}
+.posts{
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.post{
+  width: 23%;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+}
+.post:nth-child(3n +2){
+  flex-grow: 1;
+}
+.records-list{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.records{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.pin-records{
+  flex-basis: 30%;
+}
+.record{
+  border: 1px solid black;
+  margin: 2px;
+  padding: 4px;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
