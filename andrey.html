@@ -3,12 +3,29 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>...</title>
+        <title>bootstrap</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-      <div class="container-fluid h-100 bg-secondary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Table</a>
+              <a class="nav-link" href="#">List</a>
+              <a class="nav-link" href="#">Form</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="alert alert-warning" role="alert">
+        Start!
+      </div>
+      <div class="container-fluid w-100 bg-secondary border p-3">
         <div class="row h-100">
             <div class="p-1 col-4 h-100">
                 <ul class="list-group h-100">
@@ -28,83 +45,143 @@
                   </ul>
             </div>
             <div class="p-1 m-0 col-8 h-100">
-                <table class="table table-bordered table-striped table-hover h-100">
-                    <thead class="text-center">
-                        <tr>
-                          <th rowspan="4">⌀ диска</th>
-                          <th rowspan="4">Размер шин</th>
-                          <th colspan="4">Размеры</th>
-                          <th colspan="3" rowspan="3">Ширина обода диска (в дюймах)</th>
-                        </tr>
-                        <tr>
-                          <th colspan="4">Стандартные размеры</th>
-                        </tr>
-                        <tr>
-                          <th>S макс</th>
-                          <th>⌀ макс</th>
-                          <th>CdR</th>
-                          <th>R</th>
-                        </tr>
-                        <tr>
-                          <th>мм</th>
-                          <th>мм</th>
-                          <th>мм</th>
-                          <th>мм</th>
-                          <th>Мин.</th>
-                          <th>Реком.</th>
-                          <th>Макс.</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                          <td colspan="9">СЕРИЯ 80</td>
-                        </tr>
-                        <tr>
-                          <td rowspan="2">13"</td>
-                          <td>135/80R13</td>
-                          <td>138</td>
-                          <td>554</td>
-                          <td>1665</td>
-                          <td>249</td>
-                          <td>3,5</td>
-                          <td>3,5</td>
-                          <td>4,5</td>
-                        </tr>
-                        <tr>
-                          <td>145/80R13</td>
-                          <td>151</td>
-                          <td>572</td>
-                          <td>1714</td>
-                          <td>255</td>
-                          <td>3,5</td>
-                          <td>4</td>
-                          <td>5</td>
-                        </tr>
-                        <tr>
-                          <td rowspan="2">14"</td>
-                          <td>175/80R14</td>
-                          <td>184</td>
-                          <td>648</td>
-                          <td>1940</td>
-                          <td>287</td>
-                          <td>4,5</td>
-                          <td>5</td>
-                          <td>6</td>
-                        </tr>
-                        <tr><td>185/80R14</td>
-                          <td>191</td>
-                          <td>664</td>
-                          <td>1989</td>
-                          <td>293</td>
-                          <td>4,5</td>
-                          <td>5</td>
-                          <td>6</td>
-                        </tr>
-                        </tbody>
-                </table>
+              <table class="table table-bordered table-striped table-hover h-100">
+                <thead class="text-center">
+                  <tr>
+                    <th rowspan="4">⌀ диска</th>
+                    <th rowspan="4">Размер шин</th>
+                    <th colspan="4">Размеры</th>
+                    <th colspan="3" rowspan="3">Ширина обода диска (в дюймах)</th>
+                  </tr>
+                  <tr>
+                    <th colspan="4">Стандартные размеры</th>
+                  </tr>
+                  <tr>
+                    <th>S макс</th>
+                    <th>⌀ макс</th>
+                    <th>CdR</th>
+                    <th>R</th>
+                  </tr>
+                  <tr>
+                    <th>мм</th>
+                    <th>мм</th>
+                    <th>мм</th>
+                    <th>мм</th>
+                    <th>Мин.</th>
+                    <th>Реком.</th>
+                    <th>Макс.</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td colspan="9">СЕРИЯ 80</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">13"</td>
+                    <td>135/80R13</td>
+                    <td>138</td>
+                    <td>554</td>
+                    <td>1665</td>
+                    <td>249</td>
+                    <td>3,5</td>
+                    <td>3,5</td>
+                    <td>4,5</td>
+                  </tr>
+                  <tr>
+                    <td>145/80R13</td>
+                    <td>151</td>
+                    <td>572</td>
+                    <td>1714</td>
+                    <td>255</td>
+                    <td>3,5</td>
+                    <td>4</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">14"</td>
+                    <td>175/80R14</td>
+                    <td>184</td>
+                    <td>648</td>
+                    <td>1940</td>
+                    <td>287</td>
+                    <td>4,5</td>
+                    <td>5</td>
+                    <td>6</td>
+                  </tr>
+                  <tr><td>185/80R14</td>
+                    <td>191</td>
+                    <td>664</td>
+                    <td>1989</td>
+                    <td>293</td>
+                    <td>4,5</td>
+                    <td>5</td>
+                    <td>6</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
         </div>
-        <d
+      </div>
+      <div class="container-fluid w-100 bg-secondary border p-3">
+        <form>
+          <div>
+            <label class="form-label" for="fname">First name:</label>
+            <input class="form-control" type="text" id="fname" name="name" content="Имя" required placeholder="My name is">
+      
+            <label class="form-label" for="lname">Last name:</label>
+            <input class="form-control" type="text" id="lname" name="name" content="Фамилия" required placeholder="My name is">
+      
+            <label class="form-label" for="pass">Password:</label>
+            <input class="form-control" type="password" id="pass" name="name" required placeholder="My pass is">
+            <br><button type="reset" class="btn btn-danger">Slim Shady</button>
+          </div>
+      
+          <div>
+            <label class="form-label" for="sel">Select</label>
+            <select class="form-select" id="sel">
+              <optgroup label="1-2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </optgroup>
+              <optgroup label="3-4">
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </optgroup>
+            </select>
+          </div>
+      
+          <label class="form-label" for="d1">Radios</label>
+          <div class="form-check border" id="d1">
+            <input class="form-check-input" type="radio" id="vis1" name="vis1">
+            <label class="form-check-label" for="vis1">radio</label><br>
+            <input class="form-check-input" type="radio" checked="checked" id="vis2" name="vis1">
+            <label class="form-check-label" for="vis2">fm</label><br>
+          </div>
+          <label class="form-label" for="d2">Checks</label>
+          <div class="form-check border" id="d2">
+            <input class="form-check-input" type="checkbox" id="v1" name="vehicle" value="Bike">
+              <label class="form-check-label" for="v1"> My name is, what?</label><br>
+              <input class="form-check-input" type="checkbox" id="v2" name="vehicle" value="Car">
+              <label class="form-check-label" for="v2"> My name is, who?</label><br>
+              <input class="form-check-input" type="checkbox" id="v3" name="vehicle" value="Boat">
+              <label class="form-check-label" for="v3"> My name is, chka-chka</label>
+          </div>
+          <br>
+          <div class="input-group date">
+            <input class="form-control" type="datetime-local">
+          </div>
+          <br>
+          <div class="input-group">
+            <input type="file" class="form-control" id="files">
+            <label class="input-group-text" for="files">Upload</label>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-success">Sumbit</button>
+        </form>
+      </div>
+      <div class="alert alert-warning" role="alert">
+        End!
       </div>
     </body>
 </html>
